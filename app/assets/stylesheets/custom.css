@@ -20,3 +20,20 @@
 .sign-up-link {
     margin-left: 1rem;
 }
+
+.home-banner {
+    margin: 2rem auto auto;
+    padding: 3rem;
+    width: 40%;
+    background-color: darkslateblue;
+    color: white;
+}
+
+.home-banner h4 {
+    text-align: right;
+    padding: 1rem;
+}
+
+.navbar-links {
+    justify-content: end;
+}
