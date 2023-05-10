@@ -3,8 +3,7 @@
 }
 
 .page-content {
-    margin: auto;
-    width: 40%;
+    margin: 1rem;
 }
 
 .footer {
@@ -13,8 +12,9 @@
 }
 
 .card-form {
+    margin: auto;
+    width: 40%;
     background-color: darkgray;
-    margin: 2rem;
     padding: 1rem 3rem;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .home-banner {
-    margin: 2rem auto auto;
+    margin: auto;
     padding: 3rem;
     width: 40%;
     background-color: darkslateblue;

@@ -7,8 +7,16 @@
     <div class="collapse navbar-collapse navbar-links" id="navbarNav">
       <ul class="navbar-nav">
         <% if user_signed_in? %>
-          <li class="nav-item">
-            <%= button_to "Logout", destroy_user_session_path, class:"nav-link", method: :delete %>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <%= current_user.email %>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/">Home</a></li>
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <%= button_to "Logout", destroy_user_session_path, class:"nav-link", method: :delete %>
+            </ul>
           </li>
         <% else %>
           <%= link_to "Sign Up", new_user_registration_path, class:"nav-link" %>
