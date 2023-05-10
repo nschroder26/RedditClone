@@ -2,19 +2,20 @@
     background: rgba(31,47,156,0.53)
 }
 
+.page-content {
+    margin: auto;
+    width: 40%;
+}
+
 .footer {
     border-top: .15rem solid black;
     margin: 1rem;
 }
 
-.login-form {
+.card-form {
     background-color: darkgray;
-    margin: auto;
-    margin-top: 2rem;
-    width: 35%;
-    border: solid black;
-    border-radius: 3rem;
-    padding: 2rem;
+    margin: 2rem;
+    padding: 1rem 3rem;
 }
 
 .sign-up-link {
@@ -36,4 +37,8 @@
 
 .navbar-links {
     justify-content: end;
+}
+
+.form-group {
+    margin: .5rem 0rem;
 }
