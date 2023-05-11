@@ -1,1 +1,7 @@
 <h1>Current Users</h1>
+
+<% @user_emails.each do |email| %>
+  <div class="card user-card">
+    <%= email %>
+  </div>
+<% end %>

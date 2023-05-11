@@ -14,7 +14,7 @@
 .card-form {
     margin: auto;
     width: 40%;
-    background-color: darkgray;
+    background: darkgray;
     padding: 1rem 3rem;
 }
 
@@ -41,4 +41,10 @@
 
 .form-group {
     margin: .5rem 0rem;
+}
+
+.user-card {
+    background: grey;
+    margin: 1rem;
+    padding:.5rem;
 }
