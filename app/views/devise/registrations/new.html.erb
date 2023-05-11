@@ -1,7 +1,7 @@
 <container class="card card-form">
   <h2>Sign up</h2>
   <div class="row">
-    <div class="col-md">
+    <div data-turbo="false" class="col-md">
       <%= form_for(resource, as: resource_name, url: registration_path(resource_name),  class: "form-horizontal") do |f|%>
         <%= render "devise/shared/error_messages", resource: resource %>
 
