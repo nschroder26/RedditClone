@@ -44,7 +44,13 @@
 }
 
 .user-card {
+    margin:auto;
+    width: 50%;
     background: grey;
     margin: 1rem;
     padding:.5rem;
+}
+
+.admin-button {
+    margin-top: .5rem;
 }
