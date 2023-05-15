@@ -6,6 +6,6 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root 'static_pages#home'
   get '/users', to: 'users#index'
-  patch 'users/make_admin', to: 'users#make_admin', as: 'make_admin'
+  patch 'users/create_admin', to: 'users#create_admin', as: 'create_admin'
   patch 'users/remove_admin', to: 'users#remove_admin', as: 'remove_admin'
 end

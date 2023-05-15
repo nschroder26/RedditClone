@@ -12,7 +12,7 @@ class UsersController < ApplicationController
     end
   end
 
-  def make_admin
+  def create_admin
     user = User.find(params[:user_id])
     user.add_role(:admin)
     redirect_to users_path, notice: "User #{user.email} has been made an Admin"

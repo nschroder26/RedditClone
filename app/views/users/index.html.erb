@@ -8,7 +8,7 @@
       <% if user.has_role?(:admin) %>
         <%= button_to "Remove Admin", remove_admin_path(user_id: user.id), method: :patch, class: "admin-button"%>
       <% else %>
-        <%= button_to "Make Admin", make_admin_path(user_id: user.id), method: :patch, class: "admin-button" %>
+        <%= button_to "Create Admin", create_admin_path(user_id: user.id), method: :patch, class: "admin-button" %>
       <% end %>
     <% end %>
   </div>
