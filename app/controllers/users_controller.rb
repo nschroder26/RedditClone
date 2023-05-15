@@ -5,13 +5,6 @@ class UsersController < ApplicationController
     @user_emails = User.pluck(:email)
   end
 
-  def require_admin_role
-    unless current_user&.has_role?(:admin)
-      flash[:alert]= "Access denied."
-      redirect_to root_path
-    end
-  end
-
   def create_admin
     user = User.find(params[:user_id])
     user.add_role(:admin)
