@@ -2,21 +2,55 @@
     background: rgba(31,47,156,0.53)
 }
 
+.page-content {
+    margin: 1rem;
+}
+
 .footer {
     border-top: .15rem solid black;
     margin: 1rem;
 }
 
-.login-form {
-    background-color: darkgray;
+.card-form {
     margin: auto;
-    margin-top: 2rem;
-    width: 35%;
-    border: solid black;
-    border-radius: 3rem;
-    padding: 2rem;
+    width: 40%;
+    background: darkgray;
+    padding: 1rem 3rem;
 }
 
 .sign-up-link {
     margin-left: 1rem;
+}
+
+.home-banner {
+    margin: auto;
+    padding: 3rem;
+    width: 40%;
+    background-color: darkslateblue;
+    color: white;
+}
+
+.home-banner h4 {
+    text-align: right;
+    padding: 1rem;
+}
+
+.navbar-links {
+    justify-content: end;
+}
+
+.form-group {
+    margin: .5rem 0rem;
+}
+
+.user-card {
+    margin:auto;
+    width: 50%;
+    background: grey;
+    margin: 1rem;
+    padding:.5rem;
+}
+
+.admin-button {
+    margin-top: .5rem;
 }

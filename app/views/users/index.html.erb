@@ -1,0 +1,15 @@
+<h1>Current Users</h1>
+
+<% @user_emails.each do |email| %>
+  <div class="card user-card">
+    <%= email %>
+    <% user = User.find_by(email: email) %>
+    <% if user.email != current_user.email %>
+      <% if user.has_role?(:admin) %>
+        <%= button_to "Remove Admin", remove_admin_path(user_id: user.id), method: :patch, class: "admin-button"%>
+      <% else %>
+        <%= button_to "Create Admin", create_admin_path(user_id: user.id), method: :patch, class: "admin-button" %>
+      <% end %>
+    <% end %>
+  </div>
+<% end %>

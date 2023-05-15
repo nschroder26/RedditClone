@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
-  get 'static_pages/home'
-  get 'static_pages/signup'
+  devise_for :users
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
-  # root "articles#index"
+  root 'static_pages#home'
+  get '/users', to: 'users#index'
+  patch 'users/create_admin', to: 'users#create_admin', as: 'create_admin'
+  patch 'users/remove_admin', to: 'users#remove_admin', as: 'remove_admin'
 end

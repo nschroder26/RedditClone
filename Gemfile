@@ -33,6 +33,9 @@ gem "redis", "~> 4.0"
 # RSpec testing
 gem "rspec",  '~> 3.0'
 
+gem 'devise'
+gem "rolify"
+gem 'rails-ujs'
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
