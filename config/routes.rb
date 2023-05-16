@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get '/users', to: 'users#index'
   patch 'users/create_admin', to: 'users#create_admin', as: 'create_admin'
   patch 'users/remove_admin', to: 'users#remove_admin', as: 'remove_admin'
+  get '/categories', to:'categories#index'
 end
