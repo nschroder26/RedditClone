@@ -3,13 +3,15 @@
 <%= render 'categories/create' %>
 
 <% @categories.each do |category| %>
-  <div class="card card-list">
-    <div class="catgory-info">
-      <%= category.name %>
-    </div>
-    <div class="category-actions">
-      <%= button_to "Edit", category_path(category), method: :patch, class: "btn btn-dark" %>
-      <%= button_to "Remove", category_path(category), method: :delete, class: "btn btn-dark" %>
+  <div class="card card-list container">
+    <div class="row">
+      <div class="catgory-info col">
+        <%= category.name %>
+      </div>
+      <div class="category-actions col">
+        <%= button_to "Edit", category_path(category), method: :patch, class: "btn btn-dark" %>
+        <%= button_to "Remove", category_path(category), method: :delete, class: "btn btn-dark" %>
+      </div>
     </div>
   </div>
 <% end %>

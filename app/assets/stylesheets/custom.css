@@ -64,7 +64,7 @@
 }
 
 .category-actions {
-    margin-left: auto;
+    justify-content: right;
     display: flex;
     gap: 5px;
 }
