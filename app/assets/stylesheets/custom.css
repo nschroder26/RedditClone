@@ -54,3 +54,10 @@
 .admin-button {
     margin-top: .5rem;
 }
+
+.category-form {
+    background: grey;
+    margin: 1rem;
+    width: 40%;
+    padding: 1rem;
+}

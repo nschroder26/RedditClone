@@ -1,5 +1,7 @@
 <h1>Current Categories</h1>
 
+<%= render 'categories/create' %>
+
 <% @categories.each do |category| %>
   <div class="card user-card">
     <%= category.name %>
