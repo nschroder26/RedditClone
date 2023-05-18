@@ -3,7 +3,13 @@
 <%= render 'categories/create' %>
 
 <% @categories.each do |category| %>
-  <div class="card user-card">
-    <%= category.name %>
+  <div class="card card-list">
+    <div class="catgory-info">
+      <%= category.name %>
+    </div>
+    <div class="category-actions">
+      <%= button_to "Edit", category_path(category), method: :patch, class: "btn btn-dark" %>
+      <%= button_to "Remove", category_path(category), method: :delete, class: "btn btn-dark" %>
+    </div>
   </div>
 <% end %>

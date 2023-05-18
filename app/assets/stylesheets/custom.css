@@ -43,7 +43,8 @@
     margin: .5rem 0rem;
 }
 
-.user-card {
+.card-list {
+    display: flex;
     margin:auto;
     width: 50%;
     background: grey;
@@ -60,4 +61,10 @@
     margin: 1rem;
     width: 40%;
     padding: .5rem;
+}
+
+.category-actions {
+    margin-left: auto;
+    display: flex;
+    gap: 5px;
 }

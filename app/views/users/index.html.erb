@@ -1,7 +1,7 @@
 <h1>Current Users</h1>
 
 <% @user_emails.each do |email| %>
-  <div class="card user-card">
+  <div class="card card-list">
     <%= email %>
     <% user = User.find_by(email: email) %>
     <% if user.email != current_user.email %>
