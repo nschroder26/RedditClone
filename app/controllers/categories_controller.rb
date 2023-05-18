@@ -12,7 +12,7 @@ class CategoriesController < ApplicationController
   def create
     @category = Category.new(category_params)
     if @category.save
-      redirect_to categories_path, notice: "Category has been created"
+      redirect_to categories_path, notice: "#{@category.name} has been created"
     else
       render 'new'
     end
@@ -22,10 +22,14 @@ class CategoriesController < ApplicationController
     @category = Category.find(params[:id])
   end
 
+  def show
+    @category = Category.find(params[:id])
+  end
+
   def update
     @category = Category.find(params[:id])
     if @category.update(category_params)
-      redirect_to @category, notice: "Category has been updated"
+      redirect_to @category, notice: "#{@category.name} has been updated"
     else
       render 'edit'
     end

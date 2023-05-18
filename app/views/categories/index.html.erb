@@ -9,8 +9,8 @@
         <%= category.name %>
       </div>
       <div class="category-actions col">
-        <%= button_to "Edit", category_path(category), method: :patch, class: "btn btn-dark" %>
-        <%= button_to "Remove", category_path(category), method: :delete, class: "btn btn-dark" %>
+        <%= link_to "View", category_path(category), class: "btn btn-dark" %>
+        <%= button_to "Remove", category_path(category), method: :delete, class: "btn btn-danger" %>
       </div>
     </div>
   </div>
