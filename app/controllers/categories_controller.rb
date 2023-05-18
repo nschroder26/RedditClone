@@ -12,7 +12,7 @@ class CategoriesController < ApplicationController
   def create
     @category = Category.new(category_params)
     if @category.save
-      redirect_to @category, notice: "Category has been created"
+      redirect_to categories_path, notice: "Category has been created"
     else
       render 'new'
     end
@@ -38,7 +38,9 @@ class CategoriesController < ApplicationController
   end
 
   private
-    def category_params
-      params.require(:category).permit(:name)
-    end
+
+  def category_params
+    params.require(:category).permit(:name)
+  end
+
 end
