@@ -1,0 +1,19 @@
+<div class="card card-list">
+  <% if !@category.name.empty? %>
+    <h1><%= @category.name %></h1>
+  <% else %>
+    <h1>Create a Category</h1>
+  <% end %>
+
+  <%= form_for @category do |f| %>
+    <div class="form-group">
+      <%= f.label :name %>
+      <%= f.text_field :name, class: "form-control" %>
+    </div>
+
+    <div class="category-actions">
+      <%= f.submit "Submit", class: "btn btn-primary" %>
+      <%= link_to "Cancel", categories_path, class: "btn btn-danger" %>
+    </div>
+  <% end %>
+</div>

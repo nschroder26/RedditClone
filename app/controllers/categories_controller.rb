@@ -14,6 +14,7 @@ class CategoriesController < ApplicationController
     if @category.save
       redirect_to categories_path, notice: "#{@category.name} has been created"
     else
+      flash.now[:alert] = 'Invalid Category name, or Category already exists.'
       render 'new'
     end
   end

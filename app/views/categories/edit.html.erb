@@ -1,15 +1,1 @@
-<div class="card card-list">
-  <h1>Edit Category: <%= @category.name %></h1>
-
-  <%= form_for @category do |f| %>
-    <div class="form-group">
-      <%= f.label :name %>
-      <%= f.text_field :name, class: "form-control" %>
-    </div>
-
-    <div class="category-actions">
-      <%= f.submit "Update", class: "btn btn-primary" %>
-      <%= link_to "Cancel", category_path(@category), class: "btn btn-danger" %>
-    </div>
-  <% end %>
-</div>
+<%= render 'categories/category_form' %>
