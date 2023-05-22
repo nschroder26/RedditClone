@@ -43,7 +43,8 @@
     margin: .5rem 0rem;
 }
 
-.user-card {
+.card-list {
+    display: flex;
     margin:auto;
     width: 50%;
     background: grey;
@@ -53,4 +54,17 @@
 
 .admin-button {
     margin-top: .5rem;
+}
+
+.category-form {
+    background: grey;
+    margin: 1rem;
+    width: 40%;
+    padding: .5rem;
+}
+
+.category-actions {
+    justify-content: right;
+    display: flex;
+    gap: 5px;
 }

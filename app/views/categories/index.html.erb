@@ -1,0 +1,20 @@
+<h1>Current Categories</h1>
+<% if current_user.has_role?(:admin) %>
+  <%= render 'categories/create' %>
+<% end %>
+
+<% @categories.each do |category| %>
+  <div class="card card-list container">
+    <div class="row">
+      <div class="catgory-info col">
+        <%= category.name %>
+      </div>
+      <div class="category-actions col">
+        <%= link_to "View", category_path(category), class: "btn btn-dark" %>
+        <% if current_user.has_role?(:admin) %>
+          <%= button_to "Remove", category_path(category), method: :delete, class: "btn btn-danger" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+<% end %>
